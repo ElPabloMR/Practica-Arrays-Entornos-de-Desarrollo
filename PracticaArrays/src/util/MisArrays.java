@@ -3,8 +3,14 @@ package util;
 import java.util.Arrays;
 
 public class MisArrays {
+	
 
-	public float medianotas(int [] numeros) {
+	public float medianotas(int [] numeros)  {
+		for(int i=0;i<numeros.length;i++) {
+			if(numeros[i]<0 || numeros[i]>0) {
+				throw new IllegalArgumentException("No esta en el rango de rotas correcto");
+			}
+		}
 		int num1=0;
 		for(int i=0;i<numeros.length;i++) {
 			num1=num1+numeros[i];
@@ -14,6 +20,11 @@ public class MisArrays {
 	}
 	
 	public float mediananotas(int [] numeros) {
+		for(int i=0;i<numeros.length;i++) {
+			if(numeros[i]<0 || numeros[i]>0) {
+				throw new IllegalArgumentException("No esta en el rango de rotas correcto");
+			}
+		}
 		Arrays.sort(numeros);
 		float mediana=0;
 		int mitad=numeros.length/2;
@@ -27,6 +38,11 @@ public class MisArrays {
 	}
 	
 	public int maximanota(int [] numeros) {
+		for(int i=0;i<numeros.length;i++) {
+			if(numeros[i]<0 || numeros[i]>0) {
+				throw new IllegalArgumentException("No esta en el rango de rotas correcto");
+			}
+		}
 		int maxima=numeros[0];
 		for(int i=0;i<numeros.length;i++) {
 			if(maxima < numeros[i]) {
@@ -37,6 +53,11 @@ public class MisArrays {
 	}
 	
 	public int minimanota(int [] numeros) {
+		for(int i=0;i<numeros.length;i++) {
+			if(numeros[i]<0 || numeros[i]>0) {
+				throw new IllegalArgumentException("No esta en el rango de rotas correcto");
+			}
+		}
 		int minimo=numeros[0];
 		for(int i=0;i<numeros.length;i++) {
 			if(minimo > numeros[i]) {
