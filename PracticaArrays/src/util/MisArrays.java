@@ -35,4 +35,14 @@ public class MisArrays {
 		}
 		return maxima;
 	}
+	
+	public int minimanota(int [] numeros) {
+		int minimo=numeros[0];
+		for(int i=0;i<numeros.length;i++) {
+			if(minimo > numeros[i]) {
+				minimo = numeros[i];
+			}
+		}
+		return minimo;
+	}
 }
