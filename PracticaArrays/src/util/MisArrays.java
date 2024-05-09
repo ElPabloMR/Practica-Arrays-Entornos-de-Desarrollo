@@ -25,4 +25,14 @@ public class MisArrays {
 		}
 		return mediana;
 	}
+	
+	public int maximanota(int [] numeros) {
+		int maxima=numeros[0];
+		for(int i=0;i<numeros.length;i++) {
+			if(maxima < numeros[i]) {
+				maxima=numeros[i];
+			}
+		}
+		return maxima;
+	}
 }
